@@ -56,3 +56,25 @@ Thu 16 Mar 2023 03:32:49 PM UTC:
  tests:  1|6
 total_score: 10/70
 2f366c9
+Thu 16 Mar 2023 03:52:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:29:13: error: expected identifier before ‘*’ token
+   29 |     if (*a->*min > *a ->*min + 1){
+      |             ^
+exercises.c:30:18: error: expected ‘;’ before ‘}’ token
+   30 |       *max = *min
+      |                  ^
+      |                  ;
+   31 |     }
+      |     ~             
+exercises.c:33:18: error: expected ‘;’ before ‘}’ token
+   33 |       *min = *max
+      |                  ^
+      |                  ;
+   34 |     }
+      |     ~             
+Compilation failed
+fe1ca87
