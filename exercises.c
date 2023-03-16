@@ -33,9 +33,8 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     }
     if (a[i] < *min){
       *min = a[i];
-    }
+    } 
   }
-
 }
 
 
@@ -79,17 +78,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  /*vector* arreglo = 0;
-  if (arreglo == NULL){
-    return 0;
-    else{
-      arreglo = (Vector*) malloc(sizeof(Vector));
-      
-      
-    }
-  }
-  
-   return NULL;*/
+
 }
 
 /*
