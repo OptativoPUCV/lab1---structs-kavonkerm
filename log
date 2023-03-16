@@ -112,3 +112,13 @@ exercises.c:40:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 88eb416
+Thu 16 Mar 2023 03:53:21 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:29:13: error: expected identifier before ‘*’ token
+   29 |     if (*a->*min > *a ->*min + 1){
+      |             ^
+Compilation failed
+6cb8a4a
