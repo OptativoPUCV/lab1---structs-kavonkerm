@@ -292,3 +292,17 @@ exercises.c:85:22: error: ‘datos’ undeclared (first use in this function)
 exercises.c:85:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2402d6f
+Thu 16 Mar 2023 04:30:08 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:31: error: too many arguments to function ‘malloc’
+   82 |   Vector *arreglo = (Vector*) malloc(n, sizeof(Vector));
+      |                               ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Compilation failed
+11c159b
