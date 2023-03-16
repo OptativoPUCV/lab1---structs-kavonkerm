@@ -79,7 +79,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  vector* arreglo = 0;
+  /*vector* arreglo = 0;
   if (arreglo == NULL){
     return 0;
     else{
@@ -89,7 +89,7 @@ Vector * crearVector(int n) {
     }
   }
   
-   return NULL;
+   return NULL;*/
 }
 
 /*
