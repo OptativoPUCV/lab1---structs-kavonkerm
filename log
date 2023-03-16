@@ -50,3 +50,9 @@ exercises.c:16:7: error: unused variable ‘auxiliar’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 d19a19c
+Thu 16 Mar 2023 03:32:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+2f366c9
