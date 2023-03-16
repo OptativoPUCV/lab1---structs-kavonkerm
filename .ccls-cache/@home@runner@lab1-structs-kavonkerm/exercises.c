@@ -13,10 +13,7 @@ Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
-  int auxiliar = *a;
-  *a = *b;
-  *b = temporal;
-  return *b
+
 }
 
 /*
@@ -26,8 +23,6 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-  
-  
     
 }
 
@@ -104,7 +99,5 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-
-//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
 
 }
