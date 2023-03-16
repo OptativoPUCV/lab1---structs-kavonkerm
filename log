@@ -122,3 +122,32 @@ exercises.c:29:13: error: expected identifier before ‘*’ token
       |             ^
 Compilation failed
 6cb8a4a
+Thu 16 Mar 2023 04:08:31 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   81 |   vector* arreglo = 0;
+      |   ^~~~~~
+      |   Vector
+exercises.c:84:5: error: expected ‘}’ before ‘else’
+   84 |     else{
+      |     ^~~~
+exercises.c:85:15: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   85 |       arreglo = (Vector*) malloc(sizeof(Vector));
+      |               ^
+exercises.c: At top level:
+exercises.c:91:4: error: expected identifier or ‘(’ before ‘return’
+   91 |    return NULL;
+      |    ^~~~~~
+exercises.c:92:1: error: expected identifier or ‘(’ before ‘}’ token
+   92 | }
+      | ^
+exercises.c: In function ‘crearVector’:
+exercises.c:89:3: error: control reaches end of non-void function [-Werror=return-type]
+   89 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+d956cf5

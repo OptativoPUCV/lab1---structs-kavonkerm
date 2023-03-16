@@ -25,17 +25,16 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-  for (int i = 0; i < n; i++){
-    if (*a->*min > *a ->*min + 1){
-      *max = *min;
+  *max = a[0];
+  *min = a[0];
+  for (int i = 1; i < n; i++){
+    if (a[i] > *max){
+      *max = a[i];
     }
-    else{
-      *min = *max;
-
+    if (a[i] < *min){
+      *min = a[i];
     }
   }
-  
-    
 }
 
 
@@ -79,6 +78,16 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
+  vector* arreglo = 0;
+  if (arreglo == NULL){
+    return 0;
+    else{
+      arreglo = (Vector*) malloc(sizeof(Vector));
+      
+      
+    }
+  }
+  
    return NULL;
 }
 
