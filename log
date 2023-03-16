@@ -273,3 +273,22 @@ Thu 16 Mar 2023 04:23:42 PM UTC:
  tests:  3|4
 total_score: 30/70
 1563781
+Thu 16 Mar 2023 04:26:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:31: error: too few arguments to function ‘calloc’
+   82 |   Vector *arreglo = (Vector*) calloc(sizeof(Vector));
+      |                               ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:85:22: error: ‘datos’ undeclared (first use in this function)
+   85 |     arreglo->datos = datos;
+      |                      ^~~~~
+exercises.c:85:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2402d6f
