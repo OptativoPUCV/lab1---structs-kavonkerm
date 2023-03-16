@@ -35,3 +35,18 @@ exercises.c:16:7: error: unused variable ‘auxiliar’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 f41a1c3
+Thu 16 Mar 2023 03:32:35 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:18:8: error: ‘temporal’ undeclared (first use in this function)
+   18 |   *b = temporal;
+      |        ^~~~~~~~
+exercises.c:18:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:16:7: error: unused variable ‘auxiliar’ [-Werror=unused-variable]
+   16 |   int auxiliar = *a;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d19a19c

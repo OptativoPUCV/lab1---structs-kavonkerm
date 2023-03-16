@@ -16,7 +16,6 @@ void swap(int *a, int *b) {
   int auxiliar = *a;
   *a = *b;
   *b = temporal;
-  return *b
 }
 
 /*
