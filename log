@@ -78,3 +78,23 @@ exercises.c:33:18: error: expected ‘;’ before ‘}’ token
       |     ~             
 Compilation failed
 fe1ca87
+Thu 16 Mar 2023 03:52:54 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:29:13: error: expected identifier before ‘*’ token
+   29 |     if (*a->*min > *a ->*min + 1){
+      |             ^
+exercises.c:30:18: error: expected ‘;’ before ‘}’ token
+   30 |       *max = *min
+      |                  ^
+      |                  ;
+   31 |     }
+      |     ~             
+exercises.c: At top level:
+exercises.c:37:1: error: expected identifier or ‘(’ before ‘}’ token
+   37 | }
+      | ^
+Compilation failed
+1c82a94
