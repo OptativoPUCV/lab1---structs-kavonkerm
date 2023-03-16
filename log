@@ -151,3 +151,39 @@ exercises.c:89:3: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 d956cf5
+Thu 16 Mar 2023 04:08:59 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:38:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   38 |   return NULL;
+      |          ^~~~
+exercises.c:27:6: note: declared here
+   27 | void arrayMaxMin(int *a, int n, int *max, int *min) {
+      |      ^~~~~~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:82:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   82 |   vector* arreglo = 0;
+      |   ^~~~~~
+      |   Vector
+exercises.c:85:5: error: expected ‘}’ before ‘else’
+   85 |     else{
+      |     ^~~~
+exercises.c:86:15: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   86 |       arreglo = (Vector*) malloc(sizeof(Vector));
+      |               ^
+exercises.c: At top level:
+exercises.c:92:4: error: expected identifier or ‘(’ before ‘return’
+   92 |    return NULL;
+      |    ^~~~~~
+exercises.c:93:1: error: expected identifier or ‘(’ before ‘}’ token
+   93 | }
+      | ^
+exercises.c: In function ‘crearVector’:
+exercises.c:90:3: error: control reaches end of non-void function [-Werror=return-type]
+   90 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+3c74595
